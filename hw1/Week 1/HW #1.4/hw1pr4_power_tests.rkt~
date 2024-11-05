@@ -1,0 +1,11 @@
+#lang racket
+
+(require rackunit)
+(require "hw1pr3_count1bits.rkt")
+
+; provided tests
+(check-equal? (power 2 10) 1024)
+(check-equal? (power 42 10) 17080198121677824)
+
+;(check-equal? (fast-power 2 10) 1024)
+;(check-equal? (fast-power 42 10) 17080198121677824)

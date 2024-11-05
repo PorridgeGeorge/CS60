@@ -1,0 +1,13 @@
+#lang racket
+
+(provide count1bits)
+
+;; count1bits the "count1bits" function
+;;   input: a non negative integer N
+;;   output: the number of times the bit 1
+;;           appears in the binary representation of N
+(define (count1bits N)
+  (if (1 = modulo N 2)
+     (list 1 count1bits((quotient N 2)))
+     (list 0 count1bits((quotient N 2))))
+  )

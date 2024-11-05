@@ -1,0 +1,1 @@
+("8.14" tarm64osx ("4aec8768c037b8f571ec9c68f2432dcdf2ff93fa" . "baaa2ecd2ce3a080270b08578ce8f7bd7dab33aa") #"/Users/georgedavis/Desktop/CS_60/cs60-main/hw8/BST.rkt" (collects #"drracket" #"private" #"drracket-errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

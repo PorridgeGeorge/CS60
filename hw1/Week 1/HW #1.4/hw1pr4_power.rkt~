@@ -1,0 +1,16 @@
+#lang racket
+
+;; power the "power" function
+;;   input: two non negative integers base and pow
+;;   output: base raised to the power of pow
+(define (power base pow)
+    (cond
+        [(= 0 pow) (* 1)]
+        [(* base (power base (- pow 1)))]
+        )
+)
+;; erdos: the "fast-power" function
+;;        the power function with a faster runtime
+;;   input: two non negative integers base and pow
+;;   output: base raised to the power of pow
+;; (define (fast-power base pow)

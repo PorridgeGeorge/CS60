@@ -1,0 +1,9 @@
+#lang racket
+
+(require rackunit)
+(require "prefix_sublist.rkt")
+
+(check-true  (prefix? '()    '(s p a m)))
+(check-true  (prefix? '(s p) '(s p a m)))
+(check-false (prefix? '(s m) '(s p a m)))
+(check-false (prefix? '(p a) '(s p a m)))
